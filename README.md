@@ -1,9 +1,9 @@
-# smartwrap
+# @no-shims/smartwrap
 
-[![Build Status](https://travis-ci.org/tecfu/smartwrap.svg?branch=master)](https://travis-ci.org/tecfu/smartwrap) [![Dependency Status](https://david-dm.org/tecfu/smartwrap.png)](https://david-dm.org/tecfu/smartwrap) [![NPM version](https://badge.fury.io/js/smartwrap.svg)](http://badge.fury.io/js/smartwrap)
+[![npm](https://img.shields.io/npm/v/@no-shims/smartwrap.svg)](https://npmjs.com/package/@no-shims/smartwrap)
 
 Textwrap for javascript/nodejs. Correctly handles wide characters (宽字符) and emojis (😃). Optionally break words when wrapping strings.
-## Why? 
+## Why?
 
 I needed a javascript package to correctly wrap wide characters - which have a "length" property value of 1 but occupy 2 or more spaces in the terminal.
 
@@ -11,7 +11,7 @@ I needed a javascript package to correctly wrap wide characters - which have a "
 
 ### Terminal:
 ```sh
-npm i -g smartwrap
+npm i -g @no-shims/smartwrap
 echo somestring you want to wrap | smartwrap --width=3 --paddingLeft=1
 ```
 
@@ -36,7 +36,7 @@ echo somestring you want to wrap | smartwrap --width=3 --paddingLeft=1
 ### Wide Character Wrapping
 
 ```js
-var Smartwrap = require('smartwrap');
+var Smartwrap = require('@no-shims/smartwrap');
 var exampleText1 = '宽字符';
 console.log(Smartwrap(exampleText1,{
   width: 2
@@ -102,7 +102,7 @@ ord
                                                      [required] [default: 10]
 ```
 
-## Compatibility 
+## Compatibility
 
 node 6.0 <
 
